@@ -16,7 +16,7 @@ const googleRouter =require("./routes/googleAuth");
 
 // This origin is allowed only
 app.use(cors({
-    origin:"http://localhost:5173",//Access-Control-Allow-Origin
+    origin: process.env.FRONTEND_URL,//Access-Control-Allow-Origin
     credentials:true //Allows cookies in cross-origin requests
 }));
 

@@ -11,7 +11,7 @@ passport.use(
             clientSecret: process.env.GOOGLE_CLIENT_SECRET,
 
             callbackURL:
-            "http://localhost:3000/auth/google/callback",
+            `${process.env.BACKEND_URL}/auth/google/callback`,
 
         },
 

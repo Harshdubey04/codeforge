@@ -21,7 +21,7 @@ router.get(
     "/google/callback",
 
     passport.authenticate("google", {
-        failureRedirect: "http://localhost:5173/login"
+        failureRedirect: `${process.env.FRONTEND_URL}/login`
     }),
 
     (req, res) => {
@@ -52,7 +52,7 @@ router.get(
 
 
         res.redirect(
-            "http://localhost:5173/dashboard"
+            `${process.env.FRONTEND_URL}/dashboard`
         );
 
     }
