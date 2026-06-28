@@ -4,8 +4,8 @@ import App from './App.jsx'
 import { BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import store from "./redux/store";
-import AuthInitializer from "./Components/auth/AuthInitializer";
-import ErrorBoundary from './Components/common/ErrorBoundary';
+import AuthInitializer from "./components/auth/AuthInitializer";
+import ErrorBoundary from './components/common/ErrorBoundary';
 
 // Apply saved theme on load
 const savedTheme = localStorage.getItem("theme") || "dark";
