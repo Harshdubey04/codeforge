@@ -1,6 +1,6 @@
 import './App.css'
-import Login from './Pages/public/Login';
-import SignUp from './Pages/public/SignUp';
+import Login from './pages/public/Login';
+import SignUp from './pages/public/SignUp';
 import { Routes, Route } from "react-router-dom";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
@@ -11,19 +11,19 @@ import AdminRoute from "./components/auth/AdminRoute";
 import GuestRoute from './components/auth/GuestRoute';
 import DashboardLayout from './layouts/DashboardLayout';
 import AdminLayout from './layouts/AdminLayout';
-import Dashboard from './Pages/dashboard/Dashboard';
-import Profile from './Pages/dashboard/Profile';
-import LandingPage from './Pages/public/LandingPage';
+import Dashboard from './pages/dashboard/Dashboard';
+import Profile from './pages/dashboard/Profile';
+import LandingPage from './pages/public/LandingPage';
 import PublicLayout from './layouts/PublicLayout';
-import Problems from './Pages/problems/Problems';
-import ProblemDetails from './Pages/problems/ProblemDetails';
-import AdminLogin from './Pages/admin/AdminLogin';
-import AdminDashBoard from './Pages/admin/AdminDashBoard';
-import CreateProblem from './Pages/admin/CreateProblem';
-import EditProblem from './Pages/admin/EditProblem';
-import NotFound from './Pages/public/NotFound';
-import Settings from './Pages/dashboard/Settings';
-import Leaderboard from './Pages/dashboard/Leaderboard';
+import Problems from './pages/problems/Problems';
+import ProblemDetails from './pages/problems/ProblemDetails';
+import AdminLogin from './pages/admin/AdminLogin';
+import AdminDashBoard from './pages/admin/AdminDashBoard';
+import CreateProblem from './pages/admin/CreateProblem';
+import EditProblem from './pages/admin/EditProblem';
+import NotFound from './pages/public/NotFound';
+import Settings from './pages/dashboard/Settings';
+import Leaderboard from './pages/dashboard/Leaderboard';
 import ProblemLayout from './layouts/ProblemLayout';
 
 function App() {
