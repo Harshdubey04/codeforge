@@ -1,6 +1,6 @@
 import { NavLink, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { logoutUser } from "../../api/authApi";
+import { logoutUser } from "../../api/authAPI";
 import { logout } from "../../redux/authSlice";
 
 const NAV_ITEMS = [

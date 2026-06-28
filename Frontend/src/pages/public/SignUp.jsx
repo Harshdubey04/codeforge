@@ -5,7 +5,7 @@ import { z } from "zod";
 import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from "react-redux";
 import { setUser } from "../../redux/authSlice";
-import { registerUser } from "../../api/authApi";
+import { registerUser } from "../../api/authAPI";
 import { FcGoogle } from "react-icons/fc";
 
 

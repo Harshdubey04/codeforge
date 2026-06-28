@@ -3,7 +3,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { motion } from "framer-motion";
 import { z } from "zod";
 import { useNavigate } from "react-router-dom";
-import { loginUser } from "../../api/authApi";
+import { loginUser } from "../../api/authAPI";
 import { useDispatch, useSelector } from "react-redux";
 import { setUser } from "../../redux/authSlice";
 

@@ -1,6 +1,6 @@
 import {useEffect} from "react";
 import {useDispatch} from "react-redux";
-import {checkAuth} from "../../api/authApi";
+import {checkAuth} from "../../api/authAPI";
 import {setUser,setLoading} from "../../redux/authSlice";
 
 
