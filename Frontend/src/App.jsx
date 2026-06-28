@@ -4,7 +4,7 @@ import SignUp from './pages/public/SignUp';
 import { Routes, Route } from "react-router-dom";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { checkAuth } from "./api/authApi";
+import { checkAuth } from "./api/authAPI";
 import { setUser, setLoading } from "./redux/authSlice";
 import ProtectedRoute from "./components/auth/ProtectedRoute";
 import AdminRoute from "./components/auth/AdminRoute";
