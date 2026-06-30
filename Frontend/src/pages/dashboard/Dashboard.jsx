@@ -34,6 +34,13 @@ const Dashboard = () => {
     fetchStats();
   }, []);
 
+  const getGreeting = () => {
+  const hour = new Date().getHours();
+  if (hour < 12) return "Good morning";
+  if (hour < 17) return "Good afternoon";
+  return "Good evening";
+};
+
   return (
     <div className="space-y-8">
 
@@ -41,7 +48,7 @@ const Dashboard = () => {
       <div className="flex justify-between items-center">
         <div>
           <h1 className="text-4xl font-bold">
-            Good morning, {user?.firstName}! 👋
+            {getGreeting()}, {user?.firstName}! 👋
           </h1>
           <p className="text-base-content/60 mt-1">
             Keep solving and improve your skills every day.
