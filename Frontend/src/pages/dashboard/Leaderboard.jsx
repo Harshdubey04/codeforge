@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
-import { getLeaderboard } from "../../api/problemApi";
+import { getLeaderboard } from "../../api/problemAPI";
 import { motion } from "framer-motion";
 
 const MEDAL = { 1: "🥇", 2: "🥈", 3: "🥉" };

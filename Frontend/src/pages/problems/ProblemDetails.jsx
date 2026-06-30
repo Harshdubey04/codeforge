@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef, useCallback } from "react";
 import { useParams } from "react-router-dom";
-import { getProblemById, getProblemSubmissions } from "../../api/problemApi";
+import { getProblemById, getProblemSubmissions } from "../../api/problemAPI";
 import ProblemInfo from "../../components/problems/ProblemInfo";
 import EditorPanel from "../../components/problems/EditorPanel";
 import SubmissionHistory from "../../components/problems/SubmissionHistory";

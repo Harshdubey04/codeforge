@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import { askAI } from "../../api/problemApi";
+import { askAI } from "../../api/problemAPI";
 
 const AIAssistant = ({ problem }) => {
   const [isOpen, setIsOpen] = useState(false);

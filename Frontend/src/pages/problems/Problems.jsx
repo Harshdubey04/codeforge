@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getAllProblems, getSolvedProblems } from "../../api/problemApi";
+import { getAllProblems, getSolvedProblems } from "../../api/problemAPI";
 import ProblemTable from "../../components/problems/ProblemTable";
 import FilterBar from "../../components/problems/FilterBar";
 

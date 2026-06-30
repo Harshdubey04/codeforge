@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getAllUserSubmissions } from "../../api/problemApi";
+import { getAllUserSubmissions } from "../../api/problemAPI";
 
 const StatusBadge = ({ status }) => {
     if (status === "accepted") {

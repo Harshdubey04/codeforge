@@ -4,7 +4,7 @@ import { z } from "zod";
 import { motion } from "framer-motion";
 import { useNavigate, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { getProblemById, updateProblem } from "../../api/problemApi";
+import { getProblemById, updateProblem } from "../../api/problemAPI";
 
 // ================= ZOD SCHEMA =================
 

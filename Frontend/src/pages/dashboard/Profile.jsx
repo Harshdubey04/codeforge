@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
-import { getSolvedProblems } from "../../api/problemApi";
+import { getSolvedProblems } from "../../api/problemAPI";
 
 const DifficultyBadge = ({ difficulty }) => {
   const styles = {

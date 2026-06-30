@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import StatCard from "../../components/dashboard/StatCard";
 import RecentActivity from "../../components/dashboard/RecentActivity";
 import HeatMap from "../../components/dashboard/HeatMap";
-import { getSolvedProblems } from "../../api/problemApi";
+import { getSolvedProblems } from "../../api/problemAPI";
 
 const Dashboard = () => {
   const { user } = useSelector((state) => state.auth);

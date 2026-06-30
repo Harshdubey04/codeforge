@@ -296,7 +296,7 @@ const SignUp = () => {
 
                 onClick={() => {
                   window.location.href =
-                    "http://localhost:3000/auth/google";
+                    `${import.meta.env.VITE_BACKEND_URL}/auth/google`;
                 }}
 
                 className="btn btn-outline w-full"

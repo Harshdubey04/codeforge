@@ -3,7 +3,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import { createProblem } from "../../api/problemApi";
+import { createProblem } from "../../api/problemAPI";
 
 // ================= ZOD SCHEMA =================
 

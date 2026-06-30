@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import { getAllProblems } from "../../api/problemApi";
+import { getAllProblems } from "../../api/problemAPI";
 import { useNavigate } from "react-router-dom";
-import { deleteProblem } from "../../api/problemApi";
+import { deleteProblem } from "../../api/problemAPI";
 
 const DifficultyBadge = ({ difficulty }) => {
   const styles = {
