@@ -18,7 +18,12 @@ const register = async (req, res) => {
         const user = await User.create(req.body);
 
         const token = jwt.sign({ emailId: emailId, _id: user.id, role: "user" }, process.env.JWT_KEY, { expiresIn: 3600 });
-        res.cookie('token', token, { maxAge: 3600 * 1000, httpOnly: true },);
+        res.cookie('token', token, {
+            maxAge: 3600 * 1000,
+            httpOnly: true,
+            secure: true,
+            sameSite: "none"
+        });
 
         const reply = {
             firstName: user.firstName,
@@ -92,7 +97,12 @@ const login = async (req, res) => {
         );
 
         // Send cookie
-        res.cookie("token", token, { maxAge: 3600 * 1000, httpOnly: true });
+        res.cookie("token", token, {
+            maxAge: 3600 * 1000,
+            httpOnly: true,
+            secure: true,
+            sameSite: "none"
+        });
 
         res.status(200).json({
             message: "Logged In Successfully...",
